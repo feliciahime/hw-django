@@ -1,3 +1,7 @@
+    {% extends "base.html" %}
+
+    {% block content %}
+
 <head> <link href="./css/style-portfolio.css" rel="stylesheet" /> </head>
   <body>
     <div class="container">
@@ -62,3 +66,7 @@
                     <p><img src="./img/health-plan-info.png" class="align-center" alt="Document explaining health plan types"/></p>
                   </div> 
                 </div> 
+
+    {% endfor %}
+
+    {% endblock %}

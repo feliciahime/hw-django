@@ -20,17 +20,17 @@
         </head>
 
 
-
-
-
-{{ content }}
-
-
-
-
+           <div class="content">
+                {% block content %}
+                {{ content|safe }}
+                {% endblock content %}
+            </div>
 
                 </div>    
             </div>
-        </div>  
+        </div>
+        <footer>
+            (C) 2020 FAB
+        </footer>  
     </body>
 </html>

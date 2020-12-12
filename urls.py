@@ -2,11 +2,12 @@ from django.urls import path
 
 import views
 
+
 # In this example, we've separated out the views.py into a new file
 urlpatterns = [
     path('', views.index),
     path('about-me', views.about_me),
-    path('github-api-example', views.github_api_example),
+    path('blog', views.my_blog),
     path('portfolio', views.my_portfolio),
 ]
 
