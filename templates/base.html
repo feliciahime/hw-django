@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <title> {{ title }} </title>
+            <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+            <link href="./css/style.css" rel="stylesheet" />
+            <div class="container">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                    {% for page in pages %}
+                      <a href="{{ page.link }}">  {{ page.title }} </a>
+                    {% endfor %}
+                    </li>   
+                  </ul>
+            </div>
+        </head>
+
+
+
+
+
+{{ content }}
+
+
+
+
+
+                </div>    
+            </div>
+        </div>  
+    </body>
+</html>
