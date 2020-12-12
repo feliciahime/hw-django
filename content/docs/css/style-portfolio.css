@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 0px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px; }
+
+h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-weight: 400;
+    padding-bottom: 0px; }
+
+.nav-link {
+  font-weight: 700;
+  font-family: 'Cormorant Garamond', serif;
+  color: #451925; 
+}
+
+.lib-bg {
+    background-image: url("../img/lib-rijks.jpeg");
+}
+
+.semitransparent {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+  img.align-center {
+    display: block;
+    margin: auto;
+    align-content: center;
+    align-content: space-around; }
+
+  p {
+    font-family: 'EB Garamond', serif;
+    font-weight: 300;
+    padding: 60px;
+    margin: auto;
+    align-content: center;
+    color: black; } 
