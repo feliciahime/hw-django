@@ -5,31 +5,6 @@ import glob
 import os
 
 
-all_html_files = glob.glob("content/*.html")
-print(all_html_files)
-print(all_html_files[0])
-print("--------------")
-
-pages = [ ]
-x = 0
-
-title_list = ["Blog ", "Home ", "About Me ", "Portfolio"]
-
-for page in all_html_files:
-    file_path = all_html_files[x]
-    print(file_path)
-    file_name = os.path.basename(file_path) 
-    print(file_name)
-    name_only, extension = os.path.splitext(file_name) 
-    print(name_only)
-    print(x)
-    pages.append({
-        "filename": str(file_path),
-        "title": title_list[x],
-        "output": ("./docs/" + file_name),
-        "link": ("./" + str(file_name)) })
-    x += 1
-
 def index(request):
     content_html = open("content/index.html").read() 
     context = {
